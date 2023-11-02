@@ -1,0 +1,55 @@
+/* stili generali pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/* contenuto del wrapper */
+#wrapper {
+    height: calc(100vh - 100px); 
+    display: flex;
+
+    background-color: blue;
+}
+
+
+/* stili sidebar*/
+#sidebar {
+    width: 250px;
+    
+    background-color: brown;
+}
+
+
+
+
+
+
+
+/* stili content */
+#conent {
+    width: calc(100vw - 250px);
+}
+
+
+
+
+
+
+
+/* contenuto del controller */
+#controller {
+    height: 100px;
+    
+
+    background-color: aqua;
+
+}
