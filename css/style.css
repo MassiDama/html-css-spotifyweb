@@ -17,24 +17,68 @@
     height: calc(100vh - 100px); 
     display: flex;
 
-    background-color: blue;
+    
 }
+
 
 
 /* stili sidebar*/
 #sidebar {
     width: 250px;
-    
-    background-color: brown;
+    padding: 1rem;
+    background-color: black;
+    color: hsl(0, 0%, 63.9%);
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: hsl(0, 0%, 63.9%);
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.menu-sidebar li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+.menu-sidebar h3, .active {
+    color: white;
+}
+
+li .active {
+    color: white;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist a {
+    padding-top: 0.5rem;
+}
+
+.user-menu {
+    position: fixed;
+    bottom: 100px;
+}
+
+.user-menu div {
+    padding: 0.5rem 0;
+    border-top: 1px solid hsl(0, 0%, 63.9%);
+    margin-top: 0.5rem ;
+    color: white;
+    width: 200px;
 }
 
 
 
 
-
-
-
-/* stili content */
+/* stili content  */
 #conent {
     width: calc(100vw - 250px);
 }
