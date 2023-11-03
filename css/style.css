@@ -203,8 +203,37 @@ nav a {
 .execution-bar {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 1rem;
 }
+
+.progressive-barplay {
+    width: 50%;
+    height: 3px;
+    background-color: hsl(0, 0%, 63.9%);
+    margin: 0 3rem;
+    border-radius: 20px;
+}
+
+.progressive-barplay .bar {
+    width: 30%;
+    background-color: white;
+    height: 3px;
+}
+
+.progressive-baraudio {
+    width: 50%;
+    height: 3px;
+    background-color: hsl(0, 0%, 63.9%);
+    border-radius: 20px;
+}
+
+.progressive-baraudio .bar {
+    width: 10%;
+    background-color: white;
+    height: 3px;
+}
+
 
 
 /* stili audio info 1 */
@@ -232,6 +261,7 @@ nav a {
 .save-icon i{
     font-size: 20px;
     padding-right: 1rem;
+    color:  hsl(0, 0%, 63.9%) ;
 }
 
 /* stili audio info2 */
