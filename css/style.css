@@ -17,18 +17,17 @@
 #wrapper {
     height: calc(100vh - 100px); 
     display: flex; 
-    overflow-y: auto;  
 }
 
 
 
 /* stili sidebar*/
+
 #sidebar {
     width: 250px;
     padding: 1rem;
     background-color: black;
     color: hsl(0, 0%, 63.9%);
-    height: 100vh;
 }
 
 #sidebar a {
@@ -83,6 +82,8 @@ li .active {
 #content {
     width: calc(100vw - 250px);
     background-color: #141922;
+    overflow-y: auto;
+    
 }
 
 /* barra superiore content */
@@ -111,7 +112,8 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
+    margin-top: 100px;  
     
 }
 
@@ -125,7 +127,6 @@ nav a {
 /* container content menu */
 .content-menu {
    padding: 1rem 2rem;
-   height: 100%;
 }
 
 .content-menu h2 {
@@ -209,7 +210,8 @@ nav a {
 /* stili audio info 1 */
 .audio-info {
     display: flex;
-    width: 25%;
+    align-items: center;
+    width: 20%;
 
 }
 
