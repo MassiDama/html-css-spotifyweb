@@ -15,9 +15,8 @@
 /* contenuto del wrapper */
 #wrapper {
     height: calc(100vh - 100px); 
-    display: flex;
-
-    
+    display: flex;   
+    overflow-y: auto; 
 }
 
 
@@ -79,11 +78,88 @@ li .active {
 
 
 /* stili content  */
-#conent {
+#content {
     width: calc(100vw - 250px);
+    background-color: #141922;
+}
+
+/* barra superiore content */
+header {
+    height: 100px;
+    width: calc(100vw - 250px);
+    background-color: #080b12;
+    filter: opacity(0.5);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* position: fixed;
+    z-index: 100;
+    top: 0; */
+}
+
+.upgrade {
+    text-decoration: none;
+    color: white;
+    padding-right: 3rem;
+   
+}
+
+nav {
+    height: 50px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 63.9%);
+    font-size: 14px;
 }
 
 
+/* container content menu */
+.content-menu {
+   padding: 2rem;
+   height: 100%;
+}
+
+.content-menu h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* contenuto option */
+.option {
+    display: flex;  
+}
+
+.played {
+    width:calc(100% / 6);
+    margin-right: 15px;
+   
+}
+
+.played img {
+    width: 100%;
+}
+
+.played h3 {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+.played span {
+    color: hsl(0, 0%, 63.9%);
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
 
 
 
@@ -92,8 +168,6 @@ li .active {
 /* contenuto del controller */
 #controller {
     height: 100px;
-    
-
     background-color: aqua;
 
 }
