@@ -196,16 +196,21 @@ nav a {
     position: relative;
 }
 
-#playicon {
+.play i {
     font-size: 70px;
     color: white;
     position: absolute;
     transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
 }
 
-#playicon:hover
+.play:hover i{
+    visibility: visible; 
+}
 
-.song img:hover {
+.play img:hover {
     opacity: 0.5;
 }
 
