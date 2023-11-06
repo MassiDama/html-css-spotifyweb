@@ -44,22 +44,31 @@
     margin-bottom: 2rem;
 }
 
-.menu-sidebar li {
-    list-style: none;
-    padding-bottom: 0.5rem;
+#active {
+    color: white;
+   
 }
 
 .menu-sidebar h3 {
     color: white;
 }
 
-.active {
-    color: white;
-} 
+.optionmenu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.optionmenu img {
+    width: 25px;
+    padding-right: 5px;
+}
 
 .playlist {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .playlist span {
@@ -68,7 +77,7 @@
 }
 
 .playlist span i {
-    font-size: 30px;
+    font-size: 40px;
     padding-right: 10px;
     padding-top: 5px;
 }
@@ -86,14 +95,30 @@
     bottom: 100px;
 }
 
+.user-menu img {
+    width: 20px;
+    padding-right: 5px;
+}
+
+.user-menu i {
+    font-size: 25px;
+    padding-right: 5px;
+}
+
 .user-menu div {
     padding: 0.5rem 0;
     border-top: 1px solid hsl(0, 0%, 63.9%);
     margin-top: 0.5rem ;
     color: white;
     width: 200px;
+    display: flex;
+    align-items: center;
 }
 
+.installation {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -197,7 +222,7 @@ nav a {
 }
 
 .play i {
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -212,6 +237,7 @@ nav a {
 
 .play img:hover {
     opacity: 0.5;
+
 }
 
 .played h3 {
@@ -358,6 +384,38 @@ nav a {
 
    .option {
     flex-wrap: wrap;
-    
    }
+
+   .played {
+    width:calc((100% / 4) - 30px);
+   
+}
+}
+
+/* versione s */
+@media all and (max-width:639px) {
+
+    nav {
+
+    }
+
+    .played {
+        width:calc((100% / 2) - 30px);
+       
+
+    }
+    
+}
+
+/* versione xs */
+@media all and (max-width:552px) {
+
+   #sidebar {
+    width: 50px;
+   }
+
+   #sidebar a {
+    display: none;
+   }
+
 }
