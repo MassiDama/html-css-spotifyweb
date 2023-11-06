@@ -134,8 +134,7 @@
 header {
     height: 100px;
     width: calc(100vw - 250px);
-    background-color: #080b12;
-    filter: opacity(0.5);
+    background-color: #080b127a;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -143,12 +142,18 @@ header {
     z-index: 100;
 }
 
+.upgrade {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-right: 20px;
+
+}
+
 #up {
     text-decoration: none;
     color: white;
     padding-right: 3rem;
-    border-radius: 20px solid white;
-   
 }
 
 nav {
@@ -375,11 +380,15 @@ nav a {
 
 
 /* versione md */
-@media all and (max-width:878px) {
+@media all and (max-width:900px) {
     
    nav {
-    width: 70%;
+    width: 100%;
     
+   }
+
+   nav a {
+    margin-bottom: 20px;
    }
 
    .option {
@@ -393,10 +402,10 @@ nav a {
 }
 
 /* versione s */
-@media all and (max-width:639px) {
+@media all and (max-width:700px) {
 
     nav {
-
+        flex-wrap: wrap;
     }
 
     .played {
@@ -408,7 +417,21 @@ nav a {
 }
 
 /* versione xs */
-@media all and (max-width:552px) {
+@media all and (max-width:600px) {
+
+    nav {
+        
+    }
+
+    #content {
+        width: calc(100vw - 50px);
+    }
+
+    header {
+        width: calc(100vw - 50px);
+    }
+
+
 
    #sidebar {
     width: 50px;
